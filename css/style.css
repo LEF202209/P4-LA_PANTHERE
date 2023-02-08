@@ -7,6 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+img {
+    object-fit:cover;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
