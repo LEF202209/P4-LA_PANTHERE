@@ -100,12 +100,12 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .79);
+    color: rgba(255, 255, 255, .7);
 }
 
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
-}center
+}
 
 .d-bloc .icon-round,
 .d-bloc .icon-square,
@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255)!important;
+    color: rgba(255, 255, 255, .6);
 }
 
 .d-bloc .a-btn:hover,
@@ -195,7 +195,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .59);
+    color: rgba(0, 0, 0, .5);
 }
 
 .d-bloc .panel button:hover,
@@ -677,7 +677,7 @@ a {
 }
 
 p {
-    font-size: 17px;
+    font-size: 11px;
 }
 
 .tight-width-whitespace {
@@ -771,17 +771,15 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    /* background-color: #F3976C; */
-    background-color:#d23b0b;
+    background-color: #F3976C;
 }
 
 .tc-white {
-    color: white!important;
+    color: #F3976C!important;
 }
 
 .btn-atomic-tangerine {
-    /* background: #F3976C; */
-    background:#d23b0b;
+    background: #F3976C;
     color: #FFFFFF!important;
 }
 
@@ -824,7 +822,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
+    background-image: url("img/image-de-presentation.bmp");
 }
 
 @media (max-width: 1024px) {
@@ -850,13 +848,13 @@ h4 {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -875,8 +873,8 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -886,8 +884,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -976,8 +974,8 @@ h4 {
         margin-left: 10px;
     }
     .bloc {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 0;
+        padding-right: 0;
     }
     .bloc-xxl,
     .bloc-xl,
