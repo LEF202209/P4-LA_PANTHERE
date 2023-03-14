@@ -379,7 +379,7 @@ a:hover {
 
 .citation {
     font-size:22px;
-    margin:0 8%;
+    margin:0 6%;
     font-style:italic;
 }
 
@@ -751,6 +751,8 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display:flex;
+    justify-content: center;
 }
 
 h2 {
@@ -1086,8 +1088,12 @@ h4 {
         padding-left:10px;
     }
     .icon-md {
-        font-size: 40px!important;
-        margin:18px;
+        font-size: 35px!important;
+        margin:15px;
+    }
+    .name
+    {
+        font-weight:bold;
     }
 }
 
